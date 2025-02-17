@@ -1,6 +1,6 @@
 # PROXY - INVERSO
 ## Servidor w1
-En el servidor w1 editamos el archivo <a href="/proxy-inverso/w1/default"> default </a> de la ruta /etc/nginx/sites-available/default.
+En el servidor w1 editamos el archivo <a href="/w1/default"> default </a> de la ruta /etc/nginx/sites-available/default.
 Luego reiniciamos Nginx para aplicar los cambios mediante el comando "sudo systemctl restart nginx".
 Creamos una página de prueba <a href="/proxy-inverso/w1/index.html"> index.html </a>
 Probamos la apliación con curl, primero lo instalamos (sudo apt install -y curl) y luego lo conectamos (curl http://localhost:8080)
