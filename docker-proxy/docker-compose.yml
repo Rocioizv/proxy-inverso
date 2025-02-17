@@ -1,0 +1,20 @@
+services:
+  app:
+    build: 
+      context: ./app
+    networks:
+      - mynetwork
+
+  web:
+    build: 
+      context: ./web
+    depends_on:
+      - app
+    ports:
+      - "80:80"  
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
